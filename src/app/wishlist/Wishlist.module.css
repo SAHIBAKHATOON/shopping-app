@@ -1,0 +1,89 @@
+.wishlistContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.wishlistGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.wishlistItem {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.wishlistItem:hover {
+  transform: translateY(-5px);
+}
+
+.productImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.productInfo {
+  padding: 1rem;
+}
+
+.productInfo h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.price {
+  font-weight: bold;
+  color: #2ecc71;
+  margin: 0.5rem 0;
+}
+
+.removeButton {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s;
+}
+
+.removeButton:hover {
+  background: #c0392b;
+}
+
+.emptyWishlist {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.emptyWishlist h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.emptyWishlist p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.continueShopping {
+  display: inline-block;
+  background: #3498db;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.continueShopping:hover {
+  background: #2980b9;
+} 
